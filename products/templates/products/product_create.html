@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+
+{% block content %}
+<h1>Product Creation Form</h1>
+<div class="form">
+    <form method="POST">
+        {% csrf_token %}
+        <div class="fields">
+            <div class="input-container">
+                <label for="Product">Product</label>
+                <input class="input" type="text" id="Product" name="name" />
+            </div>
+            <div class="input-container">
+                <label for="seller">Seller</label>
+                <input class="input" type="text" id="seller" name="seller" />
+            </div>
+            <div class="input-container">
+                <label for="Price">Price</label>
+                <input class="input" type="number" id="price" name="price" />
+            </div>
+        </div>
+        <div class="submit-container">
+            <input class="submit" type="submit" value="Submit" /><br>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

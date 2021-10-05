@@ -1,0 +1,108 @@
+body {
+  text-align: center;
+  /* margin: 0; */
+  background-color: bisque;
+  font-family: ubuntu;
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(../fonts/ubuntu/Ubuntu-R.ttf);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(71, 49, 14);
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.topnav a {
+  border-radius: 15px;
+  float: left;
+  color: #ffffff;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  background-color: rgb(98, 68, 20);
+  color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+  background-color: #078171;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+button {
+  background-color: rgb(178, 204, 204);
+  margin: 30px auto 30px auto;
+  font-family: ani;
+  font-size: 26px;
+  border: 2px solid bisque;
+  border-radius: 10px;
+}
+
+.form {
+  display: inline-block;
+  color: rgb(178, 204, 204);
+  font-size: 26px;
+  font-family: Ubuntu;
+  border: 30px;
+  margin: auto;
+  color: rgb(73, 73, 73);
+  background-color: rgb(178, 204, 204);
+  border: 2px solid bisque;
+  border-radius: 15px;
+  width: 400px;
+  height: auto;
+}
+
+.fields {
+  margin-top: 15px;
+}
+
+.input-container {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: rgb(73, 73, 73);
+  font-size: 24px;
+  color: bisque;
+  border-radius: 10px;
+  border: none;
+  padding-left: 25px;
+  height: 55px;
+  width: 350px;
+}
+
+.input::placeholder {
+  padding-left: 50px;
+  color: rgb(255, 140, 0);
+  opacity: 20%;
+  font-family: ubuntu;
+  font-size: 24px;
+}
+.submit {
+  background-color: rgb(73, 73, 73);
+  color: bisque;
+  border: 2px solid rgba(255, 0, 0, 0.226);
+  border-radius: 15px;
+  cursor: pointer;
+  margin: auto;
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+}
+.submit-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

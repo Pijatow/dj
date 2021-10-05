@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+
+{% block content %}
+    <p>Author: {{ author.name }}</p>
+    <p>Email: {{ author.email }}</p>
+    <hr>
+    <h1>{{ author.name }}'s Posts</h1>
+    <ul>
+        {% for post in posts %}
+            <li>
+                {{ post.topic }}
+                <br>
+                {{ post.content }}
+                <hr>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}

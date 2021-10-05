@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+
+{% block content %}
+<p>about.html content</p>
+
+{% if topics %}
+<ul>
+    {% for topic in topics %}
+    <li>
+        {{forloop.counter}} - {{topic}}
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>NO TOPICS</p>
+{% endif %}
+
+{% endblock %}

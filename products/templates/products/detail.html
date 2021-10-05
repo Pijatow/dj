@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+
+{% block content %}
+<ul>
+    {% for obj in objects %}
+    <div class="form">
+        <div class="fields">
+            <label for="name">Name:</label>
+            <div style="display: inline;" class="input-container" id="name">{{ obj.name }}</div><hr>
+            <label for="price">Price:</label>
+            <div style="display: inline;" class="input-container" id="price">{{ obj.price }}</div><hr>
+            <label for="seller">Seller:</label>
+            <div style="display: inline;" class="input-container" id="seller">{{ obj.seller }}</div><hr>
+            <label for="last_modified">Last Modified:</label>
+            <div style="display: inline;" class="input-container" id="last_modified">{{ obj.last_modified }}</div>
+        </div>
+    </div>
+    {% endfor %}
+</ul>
+{% endblock %}

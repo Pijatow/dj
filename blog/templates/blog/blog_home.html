@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+
+{% block content %}
+    <h1>Recent Posts</h1>
+    {% for post in recent_posts %}
+        <p>{{ post }}</p>
+    {% endfor %}
+{% endblock content %}
